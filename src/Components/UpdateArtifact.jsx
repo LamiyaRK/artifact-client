@@ -2,7 +2,7 @@ import React, { use, useEffect, useState } from 'react';
 import AuthContext from '../Context/AuthContext';
 import axios from 'axios';
 import { toast } from 'react-toastify';
-import { useLoaderData, useNavigate } from 'react-router';
+import { useLoaderData, useNavigate, useParams } from 'react-router';
 import AnimatedSection from './AnimatedSection';
 import AnimatedText from './AnimatedText';
 import Swal from 'sweetalert2';
@@ -12,7 +12,7 @@ const UpdateArtifact = () => {
   
     const [types,setTypes]=useState([])
     const {user}=use(AuthContext)
-    const data=useLoaderData()
+  const[data,setData]=useState([])
     const navigate=useNavigate()
     useEffect(()=>{
         fetch('http://localhost:3000/artifactsbytype')
@@ -22,7 +22,28 @@ const UpdateArtifact = () => {
     
         })
     },[])
-    console.log(data)
+    const params = useParams();
+
+    useEffect(() => {
+        if (!params.id || !user?.accessToken) return;
+
+        fetch(`http://localhost:3000/artifacts/${params.id}`, {
+            headers: {
+                authorization: `Bearer ${user.accessToken}`,
+            }
+        })
+            .then(res => res.json())
+            .then(dat => {
+                setData(dat);
+              
+            })
+            .catch(err => {
+                toast(err.message || "Failed to fetch artifact details", {
+                    type: 'error',
+                    theme: 'colored'
+                });
+            });
+    }, [params.id, user?.accessToken]);
  const {artifactImage,artifactName,shortDescription,artifactType,
 historicalContext,createdAt,discoveredAt,discoveredBy,presentLocation,_id}=data
     const updateinfo=e=>{
@@ -74,7 +95,7 @@ historicalContext,createdAt,discoveredAt,discoveredBy,presentLocation,_id}=data
  </AnimatedSection>
  </div>
         <div className='bg-base-100 p-10 border-secondary  rounded-2xl'>
-        <form className='grid grid-cols-2 gap-5' onSubmit={updateinfo}>
+        <form className='grid md:grid-cols-2 gap-5' onSubmit={updateinfo}>
              <fieldset className="fieldset">
   <legend className="fieldset-legend">Name</legend>
   <input type="text" className="input w-full" value={user?.displayName||""} readOnly name='name'  />
@@ -132,12 +153,12 @@ historicalContext,createdAt,discoveredAt,discoveredBy,presentLocation,_id}=data
   <input type="text" className="input w-full" placeholder="Present Location" name='presentLocation' defaultValue={presentLocation}/>
   
 </fieldset>
-<fieldset className="fieldset col-span-2" >
+<fieldset className="fieldset md:col-span-2" >
   <legend className="fieldset-legend">Artifact Image</legend>
   <input type="URL" className="input w-full" placeholder="Artifact Image"  name='artifactImage' defaultValue={artifactImage} />
   
 </fieldset>
-<button className='btn btn-neutral col-span-2 '>Update Artifact </button>
+<button className='btn btn-neutral md:col-span-2 '>Update Artifact </button>
 </form>
         </div>
         </div>

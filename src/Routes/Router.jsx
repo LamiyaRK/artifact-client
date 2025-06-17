@@ -64,7 +64,7 @@ const router=createBrowserRouter(
             },
             {
                 path:'/updateartifact/:id',
-                loader:({params})=>fetch(`http://localhost:3000/artifacts/${params.id}`),
+               
                element:<PrivateRoute> 
                <UpdateArtifact></UpdateArtifact>
                </PrivateRoute>
