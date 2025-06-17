@@ -73,7 +73,7 @@ const Navbar = () => {
     </div>
     <div className='flex items-center gap'>
         <img src="/logo.png" className='h-[80px]'></img>
-        <p className='text-neutral text-5xl'><i className='font-bold '>Reli</i>crader</p>
+        <p className='text-neutral text-5xl '><i className='font-bold '>Reli</i>crader</p>
     </div>
   </div>
   <div className="navbar-center hidden lg:flex">
