@@ -50,7 +50,7 @@ const AllArtifacts = () => {
         />
       </div>
 
-      <div className='grid grid-cols-3 gap-5 mt-[40px]'>
+      <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-[40px]'>
         {
           artifacts.map(da => <Allcard key={da._id} da={da}></Allcard>)
         }
