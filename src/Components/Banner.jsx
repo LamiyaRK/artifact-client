@@ -32,7 +32,7 @@ const Banner=() => {
        ]
      
   return (
-    <Swiper className='h-[500px]'
+    <Swiper className='max-h-[500px]'
       // install Swiper modules
       modules={[Autoplay,Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={50}
