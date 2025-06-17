@@ -14,7 +14,7 @@ const BanSlide = ({slide}) => {
         </div>
            <div className='absolute top-[25%]  left-[20%] mx-auto text-center '>
            <div className=' flex flex-col justify-center items-center text-center text-white'>
-            <p className=' text-5xl font-bold  mx-auto mb-4'>{title}</p>
+            <h1 className=' text-5xl font-bold  mx-auto mb-4'>{title}</h1>
             <p className=' font-semibold w-[60%] mx-auto'>{description}</p>
            </div>
             

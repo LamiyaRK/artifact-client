@@ -1,6 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 @import "tailwindcss";
- 
- @plugin "daisyui" {
+@plugin "daisyui" {
    themes: light --default;
    
  }
@@ -11,4 +11,11 @@
     --color-accent: #EED8A5;       /* বালুরঙা কার্ড ব্যাকগ্রাউন্ড */
     --color-neutral: #4B3A2D;      /* ডিপ বাদামি (মেইন টেক্সট) */
   }
+h1,.fon{
+  font-family: "Cookie", cursive !important;
   
+ 
+}
+h1{
+  font-size: 60px;
+}

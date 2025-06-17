@@ -1,5 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 @import 'flowbite';
+
+
 .fancy-button {
   --fs: 0.9em;
   --col1: honeydew;
@@ -287,3 +289,6 @@
 .fil0 {
   fill: #fffdef;
 }
+body{
+     font-family: "Lora", serif !important; 
+  }
