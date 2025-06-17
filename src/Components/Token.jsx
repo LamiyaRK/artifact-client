@@ -3,7 +3,7 @@ import AuthContext from '../Context/AuthContext';
 
 const Token = () => {
     const {user}=use(AuthContext)
-    return user.accessToke;
+    return user.accessToken;
 };
 
 export default Token;
