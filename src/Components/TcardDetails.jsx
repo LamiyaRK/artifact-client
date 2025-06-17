@@ -16,7 +16,7 @@ const TcardDetails = () => {
     useEffect(() => {
         if (!params.id || !user?.accessToken) return;
 
-        fetch(`http://localhost:3000/artifacts/${params.id}`, {
+        fetch(`https://artifacts-server-rose.vercel.app/artifacts/${params.id}`, {
             headers: {
                 authorization: `Bearer ${user.accessToken}`,
             }
@@ -55,7 +55,7 @@ const TcardDetails = () => {
 
         if (result) {
             const newarr = likedBy.filter(email => email !== user?.email);
-            axios.patch(`http://localhost:3000/artifacts/${_id}`, {
+            axios.patch(`https://artifacts-server-rose.vercel.app/artifacts/${_id}`, {
                 likeCount: likeCount - 1,
                 likedBy: newarr
             }).then(() => {
@@ -66,7 +66,7 @@ const TcardDetails = () => {
             });
         } else {
             const updatedLikedBy = [...likedBy, user?.email];
-            axios.patch(`http://localhost:3000/artifacts/${_id}`, {
+            axios.patch(`https://artifacts-server-rose.vercel.app/artifacts/${_id}`, {
                 likeCount: likeCount + 1,
                 likedBy: updatedLikedBy
             }).then(() => {

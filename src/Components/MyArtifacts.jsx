@@ -12,7 +12,7 @@ const MyArtifacts = () => {
     const [data,setData]=useState([])
     
     useEffect(()=>{
-        fetch(`http://localhost:3000/artifacts?email=${user?.email}`,
+        fetch(`https://artifacts-server-rose.vercel.app/artifacts?email=${user?.email}`,
           {
             headers:{
               authorization:`Bearer ${user.accessToken}`
@@ -23,7 +23,7 @@ const MyArtifacts = () => {
         .then(da=>setData(da))
     },[user])
      const refresh=async(id)=>{
-    fetch(`http://localhost:3000/artifacts/${id}`,{
+    fetch(`https://artifacts-server-rose.vercel.app/artifacts/${id}`,{
         method:'delete',
         headers:{
           authorization:`Bearer ${user.accessToken}`

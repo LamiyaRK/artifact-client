@@ -8,7 +8,7 @@ const Trending = () => {
  const [data1,setData1]=useState([])
   
     useEffect(()=>{
-  fetch('http://localhost:3000/artifacts6')
+  fetch('https://artifacts-server-rose.vercel.app/artifacts6')
   .then(res=>res.json())
   .then(data=>setData1(data))
     },[])

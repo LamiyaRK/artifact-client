@@ -14,7 +14,7 @@ const AllArtifacts = () => {
     if (search === '') {
       setArtifacts(data); // Reset when input is cleared
     } else {
-      fetch(`http://localhost:3000/artifacts?search=${search}`)
+      fetch(`https://artifacts-server-rose.vercel.app/artifacts6?search=${search}`)
         .then(res => res.json())
         .then(data => setArtifacts(data));
     }

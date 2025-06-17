@@ -15,7 +15,7 @@ const UpdateArtifact = () => {
   const[data,setData]=useState([])
     const navigate=useNavigate()
     useEffect(()=>{
-        fetch('http://localhost:3000/artifactsbytype')
+        fetch('https://artifacts-server-rose.vercel.app/artifactsbytype')
         .then(res=>res.json())
         .then(data=>{
             setTypes(data)
@@ -27,7 +27,7 @@ const UpdateArtifact = () => {
     useEffect(() => {
         if (!params.id || !user?.accessToken) return;
 
-        fetch(`http://localhost:3000/artifacts/${params.id}`, {
+        fetch(`https://artifacts-server-rose.vercel.app/artifacts/${params.id}`, {
             headers: {
                 authorization: `Bearer ${user.accessToken}`,
             }
@@ -51,7 +51,7 @@ historicalContext,createdAt,discoveredAt,discoveredBy,presentLocation,_id}=data
   const form=e.target;
   const formdata=new FormData(form)
   const data=Object.fromEntries(formdata.entries()) 
-  axios.put(`http://localhost:3000/artifacts/${_id}`,data,{
+  axios.put(`https://artifacts-server-rose.vercel.app/artifacts/${_id}`,data,{
    headers:{
               authorization:`Bearer ${user.accessToken}`
              }

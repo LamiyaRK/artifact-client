@@ -50,7 +50,7 @@ const router=createBrowserRouter(
             },
             {
                 path:'/allartifacts',
-                loader:()=>fetch('http://localhost:3000/artifactsall'),
+                loader:()=>fetch('https://artifacts-server-rose.vercel.app/artifactsall'),
                 Component:AllArtifacts
                  
                
@@ -73,7 +73,7 @@ const router=createBrowserRouter(
             },
             {
                 path:'/favorites',
-                loader:()=>fetch('http://localhost:3000/artifactsall'),
+                loader:()=>fetch('https://artifacts-server-rose.vercel.app/artifactsall'),
                 element:<PrivateRoute> 
                 <Favourites></Favourites>
                </PrivateRoute>

@@ -12,7 +12,7 @@ const AddArtifacts = () => {
     const {user}=use(AuthContext)
 
 useEffect(()=>{
-    fetch('http://localhost:3000/artifactsbytype')
+    fetch('https://artifacts-server-rose.vercel.app/artifactsbytype')
     .then(res=>res.json())
     .then(data=>{
         setTypes(data)
@@ -24,7 +24,7 @@ const addinfo=e=>{
   const form=e.target;
   const formdata=new FormData(form)
   const data=Object.fromEntries(formdata.entries()) 
-  axios.post('http://localhost:3000/artifactsall',data,{
+  axios.post('https://artifacts-server-rose.vercel.app/artifactsall',data,{
    headers:{
               authorization:`Bearer ${user.accessToken}`
              }
