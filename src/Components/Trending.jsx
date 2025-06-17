@@ -14,7 +14,7 @@ const Trending = () => {
     },[])
 
     return (
-        <div className=' py-10 w-5/6 mx-auto my-[100px]'>
+        <div className=' py-10 w-5/6 mx-auto mt-[80px] mb-[40px]'>
         <div className='text-center space-y-2 mb-6'>
         <AnimatedSection>
         <AnimatedText
@@ -24,7 +24,7 @@ const Trending = () => {
       />
             </AnimatedSection>
  <AnimatedSection>
-    <p className='font-medium text-neutral opacity-80'>Explore the top 6 most liked artifacts, each with a brief story and a "View Details" button to learn more.</p>
+    <p className='font-medium text-neutral opacity-80'>Explore the top  most liked artifacts, each with a brief story and a "View Details" button to learn more.</p>
  </AnimatedSection>
             
         </div>

@@ -39,16 +39,16 @@ const testimonials = [
 export default function Reviews() {
   return (
     <div className=' py-10 w-5/6 mx-auto my-[10px]'>
-        <div className='text-center space-y-2 mb-6'>
+        <div className='text-center  mb-6'>
         <AnimatedSection>
         <AnimatedText
-        text="Artifact Gallery"
+        text="Voices from the Vault"
         as="h1"
         className='text-4xl font-bold text-neutral '
       />
             </AnimatedSection>
  <AnimatedSection>
-    <p className='font-medium text-neutral opacity-80'>Browse rare artifacts and add your own discoveries.</p>
+    <p className='font-medium text-neutral opacity-80'>Trusted by artifact lovers worldwide — here’s what they have to say</p>
  </AnimatedSection>
  </div>
     <div className="w-full mx-auto py-2 px-4">
