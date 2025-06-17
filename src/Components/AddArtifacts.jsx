@@ -67,7 +67,7 @@ const addinfo=e=>{
  </AnimatedSection>
  </div>
         <div className='bg-base-100 p-10 border-secondary  rounded-2xl'>
-        <form className='grid grid-cols-2 gap-5' onSubmit={addinfo}>
+        <form className='grid grid-cols-1 md:grid-cols-2 gap-5' onSubmit={addinfo}>
              <fieldset className="fieldset">
   <legend className="fieldset-legend">Name</legend>
   <input type="text" className="input w-full" value={user?.displayName||""} readOnly name='name'/>
@@ -125,12 +125,12 @@ const addinfo=e=>{
   <input type="text" className="input w-full" placeholder="Present Location" name='presentLocation' />
   
 </fieldset>
-<fieldset className="fieldset col-span-2" >
+<fieldset className="fieldset md:col-span-2" >
   <legend className="fieldset-legend">Artifact Image</legend>
   <input type="URL" className="input w-full" placeholder="Artifact Image"  name='artifactImage' />
   
 </fieldset>
-<button className='btn btn-neutral col-span-2 hover:bg-secondary'>Add Artifact </button>
+<button className='btn btn-neutral md:col-span-2 hover:bg-secondary'>Add Artifact </button>
 </form>
         </div>
         </div>
