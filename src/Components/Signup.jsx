@@ -92,13 +92,13 @@ navigate('/')
       <div className="card-body">
         <form className="fieldset " onSubmit={handleSignin}>
         <label className="label">Name</label>
-          <input type="text" className="input" placeholder="Name" name="name"/>
+          <input type="text" className="input" placeholder="Name" name="name" required/>
           <label className="label">Photo URL</label>
-          <input type="URL" className="input" placeholder="Photo URL" name="photo"/>
+          <input type="URL" className="input" placeholder="Photo URL" name="photo" required/>
           <label className="label">Email</label>
-          <input type="email" className="input" placeholder="Email" name="email"/>
+          <input type="email" className="input" placeholder="Email" name="email" required/>
           <label className="label">Password</label>
-          <input type="password" className="input" pattern="^(?=.*[a-z])(?=.*[A-Z]).{6,}$" placeholder="Password" name="pass" />
+          <input type="password" className="input" pattern="^(?=.*[a-z])(?=.*[A-Z]).{6,}$" placeholder="Password" name="pass" required/>
           
        <button className="btn btn-neutral mt-4 hover:bg-secondary" >Register</button> 
          <div class="divider">OR</div>
