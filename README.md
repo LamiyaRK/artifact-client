@@ -1,12 +1,47 @@
-# React + Vite
+# Relicrader - Discover Historical Artifacts
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-featured web application to explore, share, and save curated historical artifacts.
 
-Currently, two official plugins are available:
+## 🌐 Live URL
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[https://your-artifact-site-url.com](https://your-artifact-site-url.com)
 
-## Expanding the ESLint configuration
+## 🎯 Purpose
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Artify is designed to:
+- Showcase historical artifacts with details like discovery date, location, and significance.
+- Allow users to like, save, and add artifacts.
+- Provide an engaging, animated browsing experience using modern UI/UX.
+
+## ✨ Key Features
+
+- 🖼️ View curated and user-contributed artifacts.
+- ❤️ Like and save favorite artifacts (with real-time update).
+- 📝 Add your own artifacts with details and images.
+- 🔍 Advanced search and filtering options.
+- ⚡ Smooth scroll animations and text effects using Framer Motion.
+- 🔐 Authentication with Firebase (including Google login).
+- 💾 Backend with Express.js and MongoDB .
+- 🎨 Mobile-responsive design using Tailwind CSS + DaisyUI.
+- 📊 Like tracking via `likeCount` and `likedBy` fields.
+
+## 📦 NPM Packages Used
+
+- `react`  
+- `react-router-dom`  
+- `framer-motion`  
+- `swiper`  
+- `axios`  
+- `firebase`  
+- `react-icons`  
+- `react-toastify`  
+- `motion`  
+- `motion-plus`  
+- `daisyui`  
+- `tailwindcss`  
+- `express`  
+- `cors`  
+- `mongodb`
+
+## 📁 Folder Structure Highlights
+
