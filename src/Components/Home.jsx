@@ -28,11 +28,11 @@ const Home = () => {
         </AnimatedSection>
           
           <AnimatedSection>
-                    <div className='flex justify-between items-center gap-10' >
-            <div className='w-1/2'>
+                    <div className='flex lg:flex-row flex-col justify-between items-center gap-10' >
+            <div className='lg:w-1/2 w-11/12 mx-auto'>
                  <Faq ></Faq>
             </div>
-<div className='w-1/2'>
+<div className='w-11/12 mx-auto lg:w-1/2'>
      <Reviews></Reviews>
 </div>
 
