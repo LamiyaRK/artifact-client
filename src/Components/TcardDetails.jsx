@@ -80,7 +80,7 @@ const TcardDetails = () => {
 
     return (
         <div className='py-[100px] bg-[url("/background.png")] bg-cover bg-center'>
-            <div className='flex items-center w-4/5 mx-auto gap-5 border-2 border-secondary p-5 bg-base-100 shadow-2xl rounded-2xl '>
+            <div className='flex flex-col md:flex-row items-center w-4/5 mx-auto gap-5 border-2 border-secondary p-5 bg-base-100 shadow-2xl rounded-2xl '>
                 <div>
                     <img src={artifactImage} className='rounded-xl h-[380px]' alt="Artifact" />
                 </div>
