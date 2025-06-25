@@ -4,7 +4,7 @@ A full-featured web application to explore, share, and save curated historical a
 
 ## 🌐 Live URL
 
-[https://your-artifact-site-url.com](https://your-artifact-site-url.com)
+[https://artifact-site.com](https://artifact-f6d00.web.app/)
 
 ## 🎯 Purpose
 
