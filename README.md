@@ -92,7 +92,7 @@ Relicrader allows history enthusiasts to:
 ### 🔧 Client Setup
 
 ```bash
-git clone https://github.com/your-username/relicrader-client.git
+git clone https://github.com/LamiyaRK/relicrader-client.git
 cd relicrader-client
 npm install
 npm run dev
