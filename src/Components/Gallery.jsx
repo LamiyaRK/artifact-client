@@ -49,7 +49,7 @@ export default function Gallery() {
         <AnimatedText
         text="Artifact Gallery"
         as="h1"
-        className='text-4xl font-bold text-neutral '
+        className='text-4xl  text-neutral '
       />
             </AnimatedSection>
  <AnimatedSection>

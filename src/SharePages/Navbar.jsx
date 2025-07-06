@@ -1,11 +1,19 @@
-import React, { use } from 'react';
+import React, { use, useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router';
 import AuthContext from '../Context/AuthContext';
 import Swal from 'sweetalert2';
 import { toast } from 'react-toastify';
 
-const Navbar = () => {
+const Navbar = ({navref}) => {
   const {user,logout}=use(AuthContext)
+  const [scrolled,setScrolled]=useState(false)
+  useEffect(()=>{
+    const handleScroll=()=>{
+      setScrolled(window.scrollY>0)
+    }
+    window.addEventListener("scroll",handleScroll)
+    return ()=>window.removeEventListener("scroll",handleScroll)
+  },[])
   
   const handllogout=()=>{
          logout()
@@ -24,8 +32,10 @@ const Navbar = () => {
          })
     }
     const list=<>
-      <NavLink to='/'> <li className='text-lg text-neutral font-semibold'><a>Home</a></li></NavLink> 
+      <NavLink to='/'> <li className='text-lg text-neutral font-semibold '><a>Home</a></li></NavLink> 
            <NavLink to='/allartifacts'><li className='text-lg text-neutral font-semibold'><a>All Artifacts</a></li></NavLink> 
+           <NavLink to='/about'><li className='text-lg text-neutral font-semibold'><a>About Us</a></li></NavLink>
+            <NavLink to='/contact'><li className='text-lg text-neutral font-semibold'><a>Contact Us</a></li></NavLink>
            {user?  <NavLink to='/addartifacts'> <li className='text-lg text-neutral font-semibold'><a>Add Artifacts</a></li></NavLink> :""}
     </>
     const avtar=
@@ -57,8 +67,8 @@ const Navbar = () => {
     </div>
     
     return (
-        <div>
-           <div className="navbar bg-transparent shadow-sm">
+        <div className='sticky top-0 z-50' >
+           <div className={`navbar ${scrolled?"bg-accent":"bg-transparent"} shadow-sm `} ref={navref}>
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

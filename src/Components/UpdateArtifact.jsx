@@ -85,7 +85,7 @@ historicalContext,createdAt,discoveredAt,discoveredBy,presentLocation,_id}=data
         <AnimatedText
         text="Update Artifacts"
         as="h1"
-        className='text-4xl font-bold text-neutral '
+        className='text-4xl  text-neutral '
       />
             </AnimatedSection>
  <AnimatedSection>

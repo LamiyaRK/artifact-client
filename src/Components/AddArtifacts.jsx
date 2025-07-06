@@ -10,7 +10,7 @@ import { Helmet } from 'react-helmet';
 const AddArtifacts = () => {
     const [types,setTypes]=useState([])
     const {user}=use(AuthContext)
-
+ console.log(user.accessToken)
 useEffect(()=>{
     fetch('https://artifacts-server-rose.vercel.app/artifactsbytype')
     .then(res=>res.json())
@@ -57,7 +57,7 @@ const addinfo=e=>{
         <AnimatedText
         text="Add New Artifact"
         as="h1"
-        className='text-4xl font-bold text-neutral '
+        className='text-4xl  text-neutral '
       />
             </AnimatedSection>
  <AnimatedSection>

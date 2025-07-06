@@ -39,7 +39,7 @@ const Faq = () => {
         <AnimatedText
         text="Frequently Asked Questions"
         as="h1"
-        className='text-4xl font-bold text-neutral '
+        className='text-4xl  text-neutral '
       />
             </AnimatedSection>
  <AnimatedSection>

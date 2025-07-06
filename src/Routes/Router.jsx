@@ -15,6 +15,8 @@ import Errorpage from "../Components/Errorpage";
 
 import AuthContext from "../Context/AuthContext";
 import Token from "../Components/Token";
+import Aboutus from "../Components/Aboutus";
+import Contact from "../Components/Contact";
 
 const router=createBrowserRouter(
     [
@@ -79,6 +81,14 @@ const router=createBrowserRouter(
                </PrivateRoute>
                
             },
+            {
+                path:'/about',
+                Component:Aboutus
+            },
+            {
+                path:'/contact',
+                Component:Contact
+            }
             
             
             ]

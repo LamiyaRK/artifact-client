@@ -31,7 +31,7 @@ const AllArtifacts = () => {
           <AnimatedText
             text="All Artifacts"
             as="h1"
-            className='text-4xl font-bold text-neutral'
+            className='text-4xl  text-neutral'
           />
         </AnimatedSection>
 
@@ -49,7 +49,7 @@ const AllArtifacts = () => {
           onChange={e => setSearch(e.target.value)}
         />
       </div>
-
+      
       <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-[40px]'>
         {
           artifacts.map(da => <Allcard key={da._id} da={da}></Allcard>)

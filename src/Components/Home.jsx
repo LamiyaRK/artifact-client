@@ -10,13 +10,13 @@ import { Helmet } from 'react-helmet';
 
 const Home = () => {
     return (
-        <div>
+        <div >
         <Helmet>
           <title>Home</title>
         </Helmet>
-        <AnimatedSection>
-              <Banner></Banner>
-        </AnimatedSection>
+        
+              <Banner className="w-screen"></Banner>
+       <div className='max-w-[1600px] mx-auto'>
         <AnimatedSection>
               <Trending></Trending>
         </AnimatedSection>
@@ -39,7 +39,7 @@ const Home = () => {
             </div>
         
           </AnimatedSection>
-            
+       </div>     
            
     
         </div>

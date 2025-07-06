@@ -19,3 +19,6 @@ h1,.fon{
 h1{
   font-size: 60px;
 }
+body{
+  overflow: visible;
+}

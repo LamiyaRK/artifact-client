@@ -5,7 +5,7 @@ import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/module
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FaArrowAltCircleRight,FaArrowAltCircleLeft } from "react-icons/fa";
-// Import Swiper styles
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -75,7 +75,7 @@ const Intro = () => {
         <AnimatedText
         text="Key Features"
         as="h1"
-        className='text-4xl font-bold text-neutral '
+        className='text-4xl  text-neutral '
       />
             </AnimatedSection>
  <AnimatedSection>

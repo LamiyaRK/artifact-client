@@ -4,11 +4,13 @@ import MyTable from './MyTable';
 import { toast } from 'react-toastify';
 import AnimatedSection from './AnimatedSection';
 import AnimatedText from './AnimatedText';
-import { Link } from 'react-router';
+import { Link, useOutletContext } from 'react-router';
 import { Helmet } from 'react-helmet';
 
 const MyArtifacts = () => {
+ 
     const {user}=use(AuthContext)
+    const {height}=useOutletContext()
     const [data,setData]=useState([])
     
     useEffect(()=>{
@@ -44,7 +46,7 @@ const newData=data.filter(da=>da._id!=id);
     
    }
     return (
-       <div className=' py-10 w-5/6 mx-auto '>
+       <div className=' py-10 w-5/6 mx-auto ' style={{ minHeight: `${height}px` }}>
        <Helmet>
         <title>My Artifacts</title>
       </Helmet>
@@ -53,7 +55,7 @@ const newData=data.filter(da=>da._id!=id);
         <AnimatedText
         text="My Artifacts"
         as="h1"
-        className='text-4xl font-bold text-neutral '
+        className='text-4xl  text-neutral '
       />
             </AnimatedSection>
  <AnimatedSection>

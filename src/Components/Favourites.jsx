@@ -1,5 +1,5 @@
 import React, { use, useEffect, useState } from 'react';
-import { Link, useLoaderData } from 'react-router';
+import { Link, useLoaderData, useOutletContext } from 'react-router';
 import AuthContext from '../Context/AuthContext';
 import FavTable from './FavTable';
 import AnimatedSection from './AnimatedSection';
@@ -7,6 +7,7 @@ import AnimatedText from './AnimatedText';
 import { Helmet } from 'react-helmet';
 
 const Favourites = () => {
+  const {height}=useOutletContext()
        const data=useLoaderData()
        const {user}=use(AuthContext)
        const [likeditems,setLikeditems]=useState([])
@@ -18,7 +19,7 @@ const Favourites = () => {
         }
        },[user])
     return (
-      <div className=' py-10 w-5/6 mx-auto '>
+      <div className=' py-10 w-5/6 mx-auto ' style={{minHeight:`${height}px`}}>
       <Helmet>
         <title>Liked Artifacts</title>
       </Helmet>
@@ -27,7 +28,7 @@ const Favourites = () => {
         <AnimatedText
         text="Liked Artifacts"
         as="h1"
-        className='text-4xl font-bold text-neutral '
+        className='text-4xl  text-neutral '
       />
             </AnimatedSection>
  <AnimatedSection>
