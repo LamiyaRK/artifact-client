@@ -10,7 +10,7 @@ const Aboutus = () => {
     title: "Where It All Began",
     description:
       "While researching ancient civilizations, we realized there was no interactive platform for exploring historical artifacts online. That’s when the spark for Artifact Vault was lit.",
-    image: "/about1.jpg",
+    image: "/about1.webp",
   },
   {
     index: 2,
@@ -18,7 +18,7 @@ const Aboutus = () => {
     title: "Building the Foundation",
     description:
       "We began collecting open-access data, visuals, and records from museums and historians. With React and Firebase, we built a prototype focused on simplicity, storytelling, and education.",
-    image: "/about2.jpg",
+    image: "/about2.webp",
   },
   {
     index: 3,
@@ -26,7 +26,7 @@ const Aboutus = () => {
     title: "Expanding the Archive",
     description:
       "We introduced curated regional collections—from Egyptian relics to South Asian pottery. A visual timeline, filters, and search features made exploration more intuitive.",
-    image: "/about3.jpg",
+    image: "/about3.webp",
   },
   {
     index: 4,
@@ -34,7 +34,7 @@ const Aboutus = () => {
     title: "Going Live",
     description:
       "Artifact Vault officially launched with a refined design, mobile support, and an expanding library of ancient wonders. And this is just the beginning.",
-    image: "/about4.jpg",
+    image: "/about4.webp",
   },
 ];
 
@@ -63,10 +63,10 @@ From forgotten tools of ancient civilizations to legendary relics that shaped em
         </div>
         <div className='w-[300px] sm:w-[600px]  relative inset-0  h-[600px] sm:h-[1000px] mx-auto'>
         <div className='flex justify-end'>
-            <img src='/aboutpat.jpg' className='h-[250px] w-[200px] sm:h-[400px] sm:w-[300px] object-center object-cover   '></img>
+            <img src='/aboutpat.webp' className='h-[250px] w-[200px] sm:h-[400px] sm:w-[300px] object-center object-cover   '></img>
         </div>
          <div className='absolute top-25 lg:top-50 shadow-2xl'>
-          <img src='/aboutban.jpg' className='h-[400px] sm:h-[700px] w-[250px] sm:w-[500px] object-center object-cover shadow-2xl shadow-black z-10'></img>
+          <img src='/aboutban.webp' className='h-[400px] sm:h-[700px] w-[250px] sm:w-[500px] object-center object-cover shadow-2xl shadow-black z-10'></img>
           </div>
         </div>
           </div>

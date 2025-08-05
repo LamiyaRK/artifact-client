@@ -12,7 +12,7 @@ const SmallCard = ({ da }) => {
       <div className="relative w-[90%] h-[400px] md:h-[212px] md:w-[220px] rounded-full group ">
         
       
-        <div className="absolute inset-0 bg-[url('/bgpic.jpg')] bg-cover bg-center rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out z-0" />
+        <div className="absolute inset-0 bg-[url('/bgpic.webp')] bg-cover bg-center rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out z-0" />
 
         {/* Main image */}
         <img

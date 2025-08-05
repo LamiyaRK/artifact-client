@@ -9,7 +9,7 @@ const Errorpage = () => {
           <title>Error</title>
         </Helmet>
          <div className='bg-red-300'>
-            <img src='/error.jpg' className='w-full object-contain object-center h-screen'></img>
+            <img src='/error.webp' className='w-full object-contain object-center h-screen'></img>
          </div>   
             <div className='absolute top-10 left-5'>
          <NavLink to='/'>

@@ -17,17 +17,17 @@ const Banner=() => {
          { id:1,
            title: 'Uncover Ancient Secrets',
            description: 'Discover rare artifacts like the Antikythera Mechanism that rewrote what we know about ancient technology.',
-           bgImage: "/slide1.jpg"
+           bgImage: "/slide1.webp"
          },
          {id:2,
            title: 'Terracotta Army of Xi’an',
            description: 'Discovered guarding the tomb of China’s first emperor, this vast clay army reflects the military might of the Qin dynasty.',
-           bgImage: "/slide2.jpg"
+           bgImage: "/slide2.webp"
          },
          {id:3,
            title: 'Track Your Contributions',
            description: 'Add, like, and save your favorite historical items while exploring the timeline of human progress.',
-           bgImage: "/slide3.jpg"
+           bgImage: "/slide3.webp"
          }
        ]
      

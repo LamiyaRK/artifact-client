@@ -61,42 +61,42 @@ export default function Gallery() {
         <div className="carousel keen-slider" ref={sliderRef}>
           <div className="carousel__cell number-slide1">
             <img
-              src="https://i.ibb.co/G4CK27Bb/PDwp-Ausn-TJv-WU3-NRv-JZcz9-650-80-jpg.webp"
+              src="https://i.ibb.co/G4CK27Bb/PDwp-Ausn-TJv-WU3-NRv-JZcz9-650-80-webp.webp"
               className="h-full object-cover object-center"
               alt=""
             />
           </div>
           <div className="carousel__cell number-slide2">
             <img
-              src="https://i.ibb.co/6R3622Nq/antikythera5.jpg"
+              src="https://i.ibb.co/6R3622Nq/antikythera5.webp"
               className="h-full object-cover object-center"
               alt=""
             />
           </div>
           <div className="carousel__cell number-slide3">
             <img
-              src="https://i.ibb.co/tpQ3Trq2/lycurgus-cup-32.jpg"
+              src="https://i.ibb.co/tpQ3Trq2/lycurgus-cup-32.webp"
               className="h-full object-cover object-center"
               alt=""
             />
           </div>
           <div className="carousel__cell number-slide4">
             <img
-              src="https://i.ibb.co/6R3622Nq/antikythera5.jpg"
+              src="https://i.ibb.co/6R3622Nq/antikythera5.webp"
               className="h-full object-cover object-center"
               alt=""
             />
           </div>
           <div className="carousel__cell number-slide5">
             <img
-              src="https://i.ibb.co/kgLF0NwN/pic2.jpg"
+              src="https://i.ibb.co/kgLF0NwN/pic2.webp"
               className="h-full object-cover object-center"
               alt=""
             />
           </div>
           <div className="carousel__cell number-slide6">
             <img
-              src="https://i.ibb.co/RGyVBkCG/pic3.jpg"
+              src="https://i.ibb.co/RGyVBkCG/pic3.webp"
               className="h-full object-cover object-center"
               alt=""
             />

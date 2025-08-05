@@ -20,51 +20,51 @@ const Intro = () => {
     id: 1,
     title: "Curated Artifacts",
     description: "Explore handpicked historical items from trusted sources.",
-    img: "/arti.jpg"
+    img: "/arti.webp"
   },
   
   {
     id: 3,
     title: "User Contributions",
     description: "Upload and share your own discoveries with others.",
-    img: "/user.jpg"
+    img: "/user.webp"
   },
   {
     id: 4,
     title: "Like & Save",
     description: "Bookmark artifacts you find interesting.",
-    img: "/like.jpg"
+    img: "/like.webp"
   },
   {
     id: 5,
     title: "Advanced Search",
     description: "Find items by period, type, or location with filters.",
-    img: "/search.jpg"
+    img: "/search.webp"
   },
   {
     id: 6,
     title: "Educational Insights",
     description: "Learn historical facts with each artifact.",
-    img: "/insight.jpg"
+    img: "/insight.webp"
   },
   {
     id: 7,
     title: "Daily Discovery",
     description: "Get a fresh historical fact or item every day.",
-    img: "/Daily.jpg"
+    img: "/Daily.webp"
   },
   {
     id: 8,
     title: "Mobile Optimized",
     description: "Browse comfortably on phones and tablets.",
-    img: "/respo.jpg"
+    img: "/respo.webp"
   },
   
   {
     id: 10,
     title: "Favorites Collection",
     description: "Create your own artifact gallery with liked items.",
-    img: "/like.jpg"
+    img: "/like.webp"
   }
 ];
 
