@@ -10,7 +10,7 @@ import { Helmet } from 'react-helmet';
 const MyArtifacts = () => {
  
     const {user}=use(AuthContext)
-    const {height}=useOutletContext()
+  
     const [data,setData]=useState([])
     
     useEffect(()=>{
@@ -46,7 +46,7 @@ const newData=data.filter(da=>da._id!=id);
     
    }
     return (
-       <div className=' py-10 w-5/6 mx-auto ' style={{ minHeight: `${height}px` }}>
+       <div className=' py-10 w-5/6 mx-auto ' >
        <Helmet>
         <title>My Artifacts</title>
       </Helmet>

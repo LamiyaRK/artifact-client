@@ -61,7 +61,7 @@ const addinfo=e=>{
       />
             </AnimatedSection>
  <AnimatedSection>
-    <p className='font-medium text-neutral opacity-80'>Share a historical artifact by adding its details and image to our collection.
+    <p className='font-medium text-neutral opacity-80'>Share a historical artifact by adding its details and image loading="lazy" to our collection.
 
 </p>
  </AnimatedSection>
@@ -126,8 +126,8 @@ const addinfo=e=>{
   
 </fieldset>
 <fieldset className="fieldset md:col-span-2" >
-  <legend className="fieldset-legend">Artifact Image</legend>
-  <input type="URL" className="input w-full" placeholder="Artifact Image"  name='artifactImage' />
+  <legend className="fieldset-legend">Artifact image loading="lazy"</legend>
+  <input type="URL" className="input w-full" placeholder="Artifact image"   name='artifactImage' />
   
 </fieldset>
 <button className='btn btn-neutral md:col-span-2 hover:bg-secondary'>Add Artifact </button>

@@ -3,14 +3,14 @@ import { SwiperSlide } from 'swiper/react';
 import AnimatedSection from './AnimatedSection';
 
 const BanSlide = ({slide}) => {
-    const {title,description,bgImage}=slide
+    const {title,description,bgimage }=slide
     return (
     
             <div  className='relative h-full w-full'>
             
         <div className='h-full'>
          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-white/20 h-full "></div>
-            <img src={bgImage} className='w-full object-center object-cover h-[400px] lg:h-[500px]' ></img>
+            <img src={bgimage } className='w-full object-center object-cover h-[400px] lg:h-[500px]' ></img>
         </div>
            <div className='absolute inset-0 lg:bottom-[20%] flex items-center justify-center text-center text-white'>
   <div className='space-y-4 w-[90%] md:w-[70%] lg:w-[60%]'>

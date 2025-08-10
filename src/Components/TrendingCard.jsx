@@ -9,7 +9,7 @@ const TrendingCard = ({da}) => {
     return (
         <div className=' relative shadow-xl '>
             <div className='h-[400px] '>
-                <img src={artifactImage} className='w-full h-full object-center object-cover rounded-2xl shadow-sm  hover:shadow-2xl hover:shadow-neutral'></img>
+                <img src={artifactImage } className='w-full h-full object-center object-cover rounded-2xl shadow-sm  hover:shadow-2xl hover:shadow-neutral'></img>
             </div>
             <div className='bg-accent border-primary text-center border-2 absolute bottom-[10%] w-[80%] left-[10%] space-y-1 rounded-2xl = p-2 transform transition hover:scale-105 text-neutral '>
                 <p className='font-bold text-2xl'>{artifactName}</p>

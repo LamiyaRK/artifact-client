@@ -44,7 +44,7 @@ const UpdateArtifact = () => {
                 });
             });
     }, [params.id, user?.accessToken]);
- const {artifactImage,artifactName,shortDescription,artifactType,
+ const {artifactImage ,artifactName,shortDescription,artifactType,
 historicalContext,createdAt,discoveredAt,discoveredBy,presentLocation,_id}=data
     const updateinfo=e=>{
   e.preventDefault();
@@ -154,8 +154,8 @@ historicalContext,createdAt,discoveredAt,discoveredBy,presentLocation,_id}=data
   
 </fieldset>
 <fieldset className="fieldset md:col-span-2" >
-  <legend className="fieldset-legend">Artifact Image</legend>
-  <input type="URL" className="input w-full" placeholder="Artifact Image"  name='artifactImage' defaultValue={artifactImage} />
+  <legend className="fieldset-legend">Artifact image loading="lazy"</legend>
+  <input type="URL" className="input w-full" placeholder="Artifact image "  name='artifactImage ' defaultValue={artifactImage} />
   
 </fieldset>
 <button className='btn btn-neutral md:col-span-2 '>Update Artifact </button>

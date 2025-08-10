@@ -6,7 +6,7 @@ import Swal from 'sweetalert2';
 const MyTable = ({da,index,refresh}) => {
   console.log(da)
   const navigate=useNavigate()
-     const {artifactImage,
+     const {artifactImage ,
 artifactType,discoveredAt,discoveredBy,artifactName,_id,
 presentLocation}=da
      const handleDelete=()=>{
@@ -43,7 +43,7 @@ presentLocation}=da
             <div className="avatar">
               <div className="mask mask-squircle h-12 w-12">
                 <img
-                  src={artifactImage}
+                  src={artifactImage }
                   alt="Avatar Tailwind CSS Component" />
               </div>
             </div>

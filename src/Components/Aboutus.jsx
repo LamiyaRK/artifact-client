@@ -10,7 +10,7 @@ const Aboutus = () => {
     title: "Where It All Began",
     description:
       "While researching ancient civilizations, we realized there was no interactive platform for exploring historical artifacts online. That’s when the spark for Artifact Vault was lit.",
-    image: "/about1.webp",
+    image : "/about1.webp",
   },
   {
     index: 2,
@@ -18,7 +18,7 @@ const Aboutus = () => {
     title: "Building the Foundation",
     description:
       "We began collecting open-access data, visuals, and records from museums and historians. With React and Firebase, we built a prototype focused on simplicity, storytelling, and education.",
-    image: "/about2.webp",
+    image : "/about2.webp",
   },
   {
     index: 3,
@@ -26,7 +26,7 @@ const Aboutus = () => {
     title: "Expanding the Archive",
     description:
       "We introduced curated regional collections—from Egyptian relics to South Asian pottery. A visual timeline, filters, and search features made exploration more intuitive.",
-    image: "/about3.webp",
+    image : "/about3.webp",
   },
   {
     index: 4,
@@ -34,7 +34,7 @@ const Aboutus = () => {
     title: "Going Live",
     description:
       "Artifact Vault officially launched with a refined design, mobile support, and an expanding library of ancient wonders. And this is just the beginning.",
-    image: "/about4.webp",
+    image : "/about4.webp",
   },
 ];
 

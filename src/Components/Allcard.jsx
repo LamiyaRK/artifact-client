@@ -2,11 +2,11 @@ import React from 'react';
 import { FcLike } from "react-icons/fc";
 import { Link } from 'react-router';
 const Allcard = ({da}) => {
-    const {artifactImage,artifactType,
+    const {artifactImage ,artifactType,
 artifactName,likeCount,_id}=da
     return (
       <div className='bg-base-100 p-5 text-neutral text-center rounded-2xl border-secondary border-2 shadow-2xl space-y-2'>
-<img  src={artifactImage} className='h-[300px] w-full object-cover object-center rounded-2xl'/> 
+<img  src={artifactImage } className='h-[300px] w-full object-cover object-center rounded-2xl'/> 
       <a href="#">
       <p>{artifactType}</p>
         <h5 className="text-xl font-semibold tracking-tight text-neutral">

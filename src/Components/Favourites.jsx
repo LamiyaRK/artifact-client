@@ -7,7 +7,7 @@ import AnimatedText from './AnimatedText';
 import { Helmet } from 'react-helmet';
 
 const Favourites = () => {
-  const {height}=useOutletContext()
+  
        const data=useLoaderData()
        const {user}=use(AuthContext)
        const [likeditems,setLikeditems]=useState([])
@@ -19,7 +19,7 @@ const Favourites = () => {
         }
        },[user])
     return (
-      <div className=' py-10 w-5/6 mx-auto ' style={{minHeight:`${height}px`}}>
+      <div className=' py-10 w-5/6 mx-auto ' >
       <Helmet>
         <title>Liked Artifacts</title>
       </Helmet>
