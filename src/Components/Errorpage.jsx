@@ -16,7 +16,7 @@ const Errorpage = () => {
             <button className="relative magic-button">
   Back to home
 
-  {/* Star 1 */}
+  
   <div className="star-1 absolute top-[20%] left-[20%] w-[25px] filter drop-shadow-[0_0_0_rgba(255,253,239,0.55)] z-[-5] transition-all duration-[1000ms] ease-[cubic-bezier(0.05,0.83,0.43,0.96)]">
     <svg
       xmlns="http://www.w3.org/2000/svg"
