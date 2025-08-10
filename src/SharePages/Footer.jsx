@@ -7,6 +7,7 @@ const Footer = () => {
       <img
         src="https://i.ibb.co/cSDLynCj/b.webp"
         className="w-full h-full object-cover object-center absolute top-0 left-0 z-[1]"
+        loading="lazy"
         alt="Footer Background"
       />
 
