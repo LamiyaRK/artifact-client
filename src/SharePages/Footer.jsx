@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="relative h-[400px] w-full ">
-      {/* Background Image */}
+    
       <img
         src="https://i.ibb.co/cSDLynCj/b.webp"
         className="w-full h-full object-cover object-center absolute top-0 left-0 z-[1]"
