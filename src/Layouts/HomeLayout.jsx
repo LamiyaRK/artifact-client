@@ -11,7 +11,7 @@ const HomeLayout = () => {
   const [height, setHeight] = useState(0);
   const navref = useRef(null);
   const [bgLoaded, setBgLoaded] = useState(false);
-
+  const [load,setLoad]=useState(true)
   useEffect(() => {
     if (navref.current) {
       const h = navref.current.offsetHeight;
@@ -22,8 +22,13 @@ const HomeLayout = () => {
     const img = new Image();
     img.src = "/background.webp";
     img.onload = () => setBgLoaded(true);
-  }, []);
 
+    const time=setTimeout(()=>{
+      setLoad(false)
+    },2000)
+    return()=>clearTimeout(time)
+  }, []);
+ if(load) return <Loading/>
   if (!bgLoaded) {
     // Show loader until background fully loads
     return <Loading />;

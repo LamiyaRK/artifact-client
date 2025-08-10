@@ -82,7 +82,7 @@ const Navbar = ({navref}) => {
       </ul>
     </div>
     <div className='flex items-center gap'>
-        <img src="/logo.png" className='h-[80px]'></img>
+        <img src="/logo.webp" className='h-[80px]'></img>
         <p className='text-neutral text-2xl sm:text-3xl md:text-5xl '><i className='font-bold '>Reli</i>crader</p>
     </div>
   </div>
