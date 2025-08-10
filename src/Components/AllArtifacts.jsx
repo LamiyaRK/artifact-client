@@ -6,7 +6,7 @@ import AnimatedText from './AnimatedText';
 import { Helmet } from 'react-helmet';
 
 const AllArtifacts = () => {
-  const initialData = useLoaderData(); // original data
+  const initialData = useLoaderData(); 
   const [search, setSearch] = useState('');
   const [sortOption, setSortOption] = useState('');
   const [fetchedData, setFetchedData] = useState(initialData); // data fetched or initial
